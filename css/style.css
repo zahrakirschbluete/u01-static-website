@@ -1,0 +1,480 @@
+/* General styling*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  padding: 15px;
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  max-width: 80ch;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :focus {
+  outline: 3px solid #000;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 20px;
+  left: 300px;
+}
+
+.gotopbtn {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+embed {
+  width: 500px;
+  height: 150px;
+}
+
+/* Menu */
+body > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), to(white)), url("../media/pinkballerina.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 25%, white 100%), url("../media/pinkballerina.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  width: 200px;
+  top: 14px;
+}
+
+.menu {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  right: 5%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #351212;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.entlist {
+  background-color: rgba(255, 0, 0, 0.527);
+}
+
+.entlist a:hover {
+  color: black;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 148, 148, 0.39);
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px;
+          box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu a:hover {
+  background-color: rgba(99, 71, 71, 0.637);
+}
+
+.mobile-menu a:hover {
+  background-color: rgba(99, 71, 71, 0.637);
+}
+
+/* Section 1: aside, commercial*/
+.statement {
+  margin: 50px 0px;
+  border: 1px 0px solid;
+}
+
+.purpose {
+  margin: 0px 70px;
+  padding: 15px;
+  border-top: 1px solid rgba(182, 182, 182, 0.507);
+  border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+}
+
+video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.dancemagazine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*Section 2: classes + schedule*/
+.classes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.classes ul li {
+  width: 323px;
+}
+
+.classes ul img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+#classes {
+  border-top: 1px solid rgba(182, 182, 182, 0.507);
+  margin: 70px;
+  padding-top: 50px;
+}
+
+article {
+  padding: 10px;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+embed {
+  height: 100%;
+  max-height: 150px;
+  margin: 50px;
+}
+
+#schedulepdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+  border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+}
+
+/* Section 3: enrollment*/
+.enrollment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  padding: 50px;
+  background-image: url(../media/capture3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.enrollment form {
+  height: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.enrollment fieldset {
+  padding: 25px;
+  background: #eeeded;
+}
+
+.enrollment img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+.enrollment h2 {
+  font-size: 30px;
+  color: #1a080a;
+  font-family: 'Lato', sans-serif;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  clear: both;
+}
+
+legend {
+  display: block;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+
+.choice {
+  display: inline;
+}
+
+#entlistheader {
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+}
+
+/*section 4: social media links*/
+.ig {
+  margin-top: 50px;
+  border-top: 1px solid rgba(182, 182, 182, 0.507);
+  border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+  padding: 50px 0;
+  margin: 50px 70px;
+}
+
+.iglinks ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+article {
+  margin: 0px 0px 50px 0px;
+}
+
+article p {
+  font-size: 12px;
+}
+
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#EFD7D3));
+  background-image: linear-gradient(white, #EFD7D3);
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+footer img {
+  width: 75px;
+  height: 75px;
+}
+
+@media (min-width: 646px) and (max-width: 978px) {
+  .iglinks li img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  p {
+    max-width: 60ch;
+  }
+  .choice {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 100px;
+    -webkit-transition: width 500ms ease;
+    transition: width 500ms ease;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    left: 0;
+    top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 100%;
+  }
+  a {
+    display: inline-block;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 646px) {
+  .iglinks ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .classes ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .classes ul p {
+    padding: 15px 0;
+    max-width: 40ch;
+  }
+  .enrollment {
+    background-image: none;
+    padding: 0;
+    margin: 0;
+  }
+  .choice {
+    display: block;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
