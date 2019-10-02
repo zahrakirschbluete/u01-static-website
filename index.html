@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!--Regular menu + mobile menu -->
     <header role="banner">
         <nav role="navigation">
             <div class="skip-links">
@@ -38,10 +39,10 @@
                     <a class="entlist" href="#enroll">Enroll!</a>
                 </li>
             </ul>
-
-
         </nav>
     </header>
+
+    <!--Aside: Section for commercial-->
     <aside role="complementary">
         <header role="banner" class="statement">
             <h2 class="purpose">Dedicated to training ballet dancers of all levels</h2>
@@ -57,6 +58,9 @@
             </video>
         </section>
     </aside>
+
+    <!--Main content, includes information about the classes, the schedule and the enrollment form-->
+    
     <main role="main" id="main">
         <section role="region">
             <header role="banner">
@@ -98,8 +102,6 @@
             </article>
         </section>
         <section class="classes">
-
-
             <ul>
                 <li>
                     <img src="media/bella1.png" alt="Bellanina beginner courses" />
@@ -121,8 +123,6 @@
                         course.</p>
                 </li>
             </ul>
-
-
         </section>
 
         <section role="region" id="schedulepdf">
@@ -145,21 +145,25 @@
                     <label>E-mail address:
                         <input type="text" name="mail" aria-label="Type in your e-mail address here">
                     </label>
-                        <fieldset id="noborder"><legend>
+                    <fieldset role="radiogroup" id="noborder">
+                        <legend>
                             Type of class:
                         </legend>
-                        <label for="beginner" class="choice"><input type="radio" name="class" id="beginner" value="beginner"
-                        checked>Beginner</label>
+                        <label for="beginner" class="choice"><input type="radio" name="class" id="beginner"
+                                value="beginner" checked>Beginner</label>
                         <label for="intermediate" class="choice"><input type="radio" name="class" id="intermediate"
-                        value="intermediate">Intermediate</label>
+                                value="intermediate">Intermediate</label>
                         <label for="advanced" class="choice"><input type="radio" name="class" id="advanced"
-                        value="advanced">Advanced</label></fieldset>
-
+                                value="advanced">Advanced</label>
+                    </fieldset>
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
         </section>
     </main>
+
+    <!--Aside, includes links to instagram and a "go to the top" button-->
+
     <aside role="complementary">
         <section role="region" class="ig">
             <header role="banner">
@@ -196,8 +200,12 @@
                 </ul>
             </div>
         </section>
-        <section class="gotopbtn"><a href="#" aria-label="Go to the top of the page">&#8963;</a></section>
+        <section role="complementary" class="gotopbtn"><a href="#" aria-label="Go to the top of the page">&#8963;</a>
+        </section>
     </aside>
+
+    <!--Footer, includes contact information, smaller version of the logo and copy-->
+
     <footer role="contentinfo">
         <address>
             <a href="tel:0044161476XXXX" aria-label="Phone number 00 44 161 476 XXXX">+44 161 476 XXXX</a>
@@ -207,5 +215,4 @@
         <p>&copy;Bellanina, LC.C.</p>
     </footer>
 </body>
-
 </html>
