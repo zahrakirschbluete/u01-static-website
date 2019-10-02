@@ -253,6 +253,12 @@ embed {
   border-bottom: 1px solid rgba(182, 182, 182, 0.507);
 }
 
+#noborder {
+  border: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
 /* Section 3: enrollment*/
 .enrollment {
   display: -webkit-box;

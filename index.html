@@ -126,7 +126,7 @@
         </section>
 
         <section role="region" id="schedulepdf">
-            <embed src="media/schedule.pdf#view=fitH&toolbar=0&scrollbar=0 type=" application/pdf" id="schedule">
+            <embed src="media/schedule.pdf#view=fitH&toolbar=0&scrollbar=0 type=" type="application/pdf" id="schedule">
         </section>
 
         <section role="region" class="enrollment" id="enroll">
@@ -145,15 +145,15 @@
                     <label>E-mail address:
                         <input type="text" name="mail" aria-label="Type in your e-mail address here">
                     </label>
-                    <h4>
-                        Type of class:
-                    </h4>
-                    <label for="beginner" class="choice"><input type="radio" name="class" id="beginner" value="beginner"
-                            checked>Beginner</label>
-                    <label for="intermediate" class="choice"><input type="radio" name="class" id="intermediate"
-                            value="intermediate">Intermediate</label>
-                    <label for="advanced" class="choice"><input type="radio" name="class" id="advanced"
-                            value="advanced">Advanced</label>
+                        <fieldset id="noborder"><legend>
+                            Type of class:
+                        </legend>
+                        <label for="beginner" class="choice"><input type="radio" name="class" id="beginner" value="beginner"
+                        checked>Beginner</label>
+                        <label for="intermediate" class="choice"><input type="radio" name="class" id="intermediate"
+                        value="intermediate">Intermediate</label>
+                        <label for="advanced" class="choice"><input type="radio" name="class" id="advanced"
+                        value="advanced">Advanced</label></fieldset>
 
                     <input type="submit" value="Submit">
                 </fieldset>
