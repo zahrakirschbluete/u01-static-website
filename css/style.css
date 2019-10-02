@@ -50,25 +50,10 @@ a :focus {
   outline: 3px solid #000;
 }
 
-.skip-links a {
-  position: absolute;
-  top: -3em;
-}
-
-.skip-links a:focus {
-  top: 20px;
-  left: 300px;
-}
-
 .gotopbtn {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-}
-
-embed {
-  width: 500px;
-  height: 150px;
 }
 
 /* Menu */
@@ -89,6 +74,16 @@ body > header {
   left: 5%;
   width: 200px;
   top: 14px;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 20px;
+  left: 300px;
 }
 
 .menu {
@@ -162,15 +157,18 @@ body > header {
 
 /* Section 1: aside, commercial*/
 .statement {
-  margin: 50px 0px;
-  border: 1px 0px solid;
-}
-
-.purpose {
-  margin: 0px 70px;
+  margin: 50px 70px;
   padding: 15px;
   border-top: 1px solid rgba(182, 182, 182, 0.507);
   border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+}
+
+.dancemagazine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 video {
@@ -181,14 +179,6 @@ video {
   height: auto;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-.dancemagazine {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 /*Section 2: classes + schedule*/
@@ -217,7 +207,7 @@ video {
 
 #classes {
   border-top: 1px solid rgba(182, 182, 182, 0.507);
-  margin: 70px;
+  margin: 50px;
   padding-top: 50px;
 }
 
@@ -237,8 +227,7 @@ article {
 }
 
 embed {
-  height: 100%;
-  max-height: 150px;
+  width: 500px;
   margin: 50px;
 }
 
@@ -281,7 +270,6 @@ embed {
 }
 
 .enrollment form {
-  height: auto;
   font-family: 'Lato', sans-serif;
 }
 

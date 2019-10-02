@@ -1,5 +1,7 @@
 /* General styling*/
 
+$border-style: 1px solid rgba(182, 182, 182, 0.507);
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,6 @@ body {
     line-height: 1.5;
     height: 100%;
 }
-
-
-
 
 
 h1 {
@@ -53,34 +52,15 @@ a {
 
     :focus {
         outline: 3px solid #000;
-      }
+    }
 }
 
-.skip-links a {
-    position: absolute;
-    top: -3em;
-  }
-  
-  .skip-links a:focus {
-    top: 20px;
-    left: 300px;
-  }
 
 .gotopbtn {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
-
-embed {
-    width: 500px;
-    height: 150px;
-}
-
-
-
-
-
 
 /* Menu */
 
@@ -100,6 +80,16 @@ body>header {
     left: 5%;
     width: 200px;
     top: 14px;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+}
+
+.skip-links a:focus {
+    top: 20px;
+    left: 300px;
 }
 
 .menu {
@@ -178,17 +168,16 @@ body>header {
 /* Section 1: aside, commercial*/
 
 .statement {
-    margin: 50px 0px;
-    border: 1px 0px solid;
-
+    margin: 50px 70px;
+    padding: 15px;
+    border-top: $border-style;
+    border-bottom: $border-style;
+    ;
 }
 
-.purpose {
-    margin: 0px 70px;
-    padding: 15px;
-    border-top: 1px solid rgba(182, 182, 182, 0.507);
-    border-bottom: 1px solid rgba(182, 182, 182, 0.507);
-    ;
+.dancemagazine {
+    display: flex;
+    justify-content: space-around;
 }
 
 video {
@@ -197,11 +186,6 @@ video {
     height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
-}
-
-.dancemagazine {
-    display: flex;
-    justify-content: space-around;
 }
 
 /*Section 2: classes + schedule*/
@@ -226,9 +210,8 @@ video {
 }
 
 #classes {
-    border-top: 1px solid rgba(182, 182, 182, 0.507);
-    ;
-    margin: 70px;
+    border-top: $border-style;
+    margin: 50px;
     padding-top: 50px;
 }
 
@@ -241,8 +224,7 @@ article {
 }
 
 embed {
-    height: 100%;
-    max-height: 150px;
+    width: 500px;
     margin: 50px;
 
 }
@@ -251,7 +233,7 @@ embed {
     display: flex;
     justify-content: center;
     margin: 50px;
-    border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+    border-bottom: $border-style;
 }
 
 #noborder {
@@ -273,19 +255,18 @@ embed {
     background-image: url(../media/capture3.png);
     background-repeat: no-repeat;
     background-position: center;
-    
+
 
     form {
-        height: auto;
         font-family: 'Lato', sans-serif;
-        
+
     }
 
     fieldset {
         padding: 25px;
         background: rgb(238, 237, 237);
-        
-        
+
+
     }
 
     img {
@@ -304,7 +285,7 @@ embed {
 
 label {
     display: flex;
-   flex-flow: column nowrap;
+    flex-flow: column nowrap;
     clear: both;
 }
 
@@ -335,37 +316,20 @@ legend {
 /*section 4: social media links*/
 .ig {
     margin-top: 50px;
-    border-top: 1px solid rgba(182, 182, 182, 0.507);
-    border-bottom: 1px solid rgba(182, 182, 182, 0.507);
+    border-top: $border-style;
+    border-bottom: $border-style;
     padding: 50px 0;
     margin: 50px 70px;
 
 }
 
 .iglinks ul {
-
-
-
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
-
-
-
+    @extend .classes ul;
 }
 
 
-
-
-
 article {
-    margin: 0px 0px 50px 0px;
-
-    p {
-        font-size: 12px;
-    }
+    margin-bottom 50px;
 }
 
 
@@ -442,7 +406,7 @@ footer {
         display: inline-block;
         min-width: 100%;
     }
-    
+
 }
 
 
@@ -464,6 +428,7 @@ footer {
 
         }
     }
+
     .enrollment {
         background-image: none;
         padding: 0;
@@ -476,6 +441,6 @@ footer {
 
     footer {
         flex-direction: column;
-    align-items: center;
+        align-items: center;
     }
 }
