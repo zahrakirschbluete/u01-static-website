@@ -2,6 +2,13 @@
 
 $border-style: 1px solid rgba(182, 182, 182, 0.507);
 
+@mixin flexbox-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +130,7 @@ body>header {
     li a:hover {
         text-decoration: underline;
     }
+
 }
 
 .entlist {
@@ -192,10 +200,7 @@ video {
 
 
 .classes ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    list-style-type: none;
+    @include flexbox-row-nowrap;
 
 
     li {
@@ -324,12 +329,12 @@ legend {
 }
 
 .iglinks ul {
-    @extend .classes ul;
+    @include flexbox-row-nowrap;
 }
 
 
 article {
-    margin-bottom 50px;
+    margin-bottom: 50px;
 }
 
 

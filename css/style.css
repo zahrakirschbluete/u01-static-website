@@ -330,7 +330,6 @@ legend {
 }
 
 .iglinks ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,15 +339,11 @@ legend {
           flex-flow: row nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 50px;
+  list-style-type: none;
 }
 
 article {
-  margin: 0px 0px 50px 0px;
-}
-
-article p {
-  font-size: 12px;
+  margin-bottom: 50px;
 }
 
 /* Footer */
