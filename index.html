@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta id="keywords" content="ballet, ballet academy, ballet school, bellanina ballet academy, ballet classes in UK, ballet courses in UK, dance classes, dance classes in UK">
-    <meta id="description" content="The best ballet academy in the UK.">
+    <meta name="keywords" content="ballet, ballet academy, ballet school, bellanina ballet academy, ballet classes in UK, ballet courses in UK, dance classes, dance classes in UK">
+    <meta name="description" content="The best ballet academy in the UK.">
     <link rel="icon" href="media/logo2.png">
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -125,7 +125,7 @@
         </section>
 
         <section role="region" id="schedulepdf">
-            <embed src="media/schedule.pdf#view=fitH&toolbar=0&scrollbar=0 type=" type="application/pdf" id="schedule">
+            <embed src="media/schedule.pdf#view=fitH&toolbar=0&scrollbar=0" type="application/pdf" id="schedule">
         </section>
 
         <section role="region" class="enrollment" id="enroll">
@@ -142,17 +142,17 @@
                         <input type="text" name="surname" aria-label="Type in your surname here">
                     </label>
                     <label>E-mail address:
-                        <input type="text" name="mail" aria-label="Type in your e-mail address here">
+                        <input type="email" name="mail" aria-label="Type in your e-mail address here">
                     </label>
                     <fieldset role="radiogroup" id="noborder">
                         <legend>
                             Type of class:
                         </legend>
-                        <label for="beginner" class="choice"><input type="radio" name="class" id="beginner"
+                        <label class="choice"><input type="radio" name="class" id="beginner"
                                 value="beginner" checked>Beginner</label>
-                        <label for="intermediate" class="choice"><input type="radio" name="class" id="intermediate"
+                        <label class="choice"><input type="radio" name="class" id="intermediate"
                                 value="intermediate">Intermediate</label>
-                        <label for="advanced" class="choice"><input type="radio" name="class" id="advanced"
+                        <label class="choice"><input type="radio" name="class" id="advanced"
                                 value="advanced">Advanced</label>
                     </fieldset>
                     <input type="submit" value="Submit">
